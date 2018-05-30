@@ -21,6 +21,11 @@ from filter1.models import Data
 
 class Sort(forms.Form):
     cat = forms.ChoiceField(choices=[(x, x) for x in range(0, 2)])
+
+    class Meta:
+        fields = ('cat',)
+
+
 '''
 from django import forms
 from .models import Data
